@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="refresh" content="14">
+<title>Lightning-Gifts</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: xx-large;
+}
+.style2 {font-size: small}
+.style3 {
+	font-size: large;
+	color: #FF0000;
+}
+.style6 {
+	font-size: large;
+	color: #00CC66;
+}
+-->
+</style>
+</head>
+
+<body>
+<form>
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #191970; color: #fff000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Gifts" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/gifts.9.html'" />
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffd800; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Q1" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/gifts.9.1.html'" />
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #FFD800; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Q2" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/gifts.9.2.html'" />
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #FFD800; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Q3" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/gifts.9.3.html'" />
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #FFD800; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Q4" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/gifts.9.4.html'" />
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #FFD800; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Q5" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/gifts.9.5.html'" />
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #FFD800; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Q6" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/gifts.9.6.html'" />
+</form>
+<form>
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Stats" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/game.9.html'" />
+
+<input style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #00ff04; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Poss Total" onclick="window.location.href='http://www.lightningdatahub.com/Gameday/Poss_Total.html'" />
+
+
+</form>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date().getTime() + 16000;
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = "Data Updating in " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+<p class="style1 style2"><img src="../../../Gameday/Gifts_Total.jpg" width="1075" height="764" longdesc="../..//Gameday/Gifts_Total.jpg" /></p>
+<p class="style1">&nbsp;</p>
+</body>
+
+</html>

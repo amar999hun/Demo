@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NNZ Gameday</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .landing-page {
+      height: 100vh;
+      background-image: url('backgrounds/netball_BG.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 80%;
+      height: 80%;
+    }
+
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 70%;
+      background-image: url('backgrounds/netball_logo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .logo {
+      max-width: 100%;
+      height: auto;
+      opacity: 0;
+    }
+
+    .content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .content .button {
+      margin: 2rem;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: rgba(6, 3, 0, 0.958)
+    }
+
+    .button {
+      background-color: #769477;
+      color: white;
+      padding: 1.5rem 3rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      margin: 1rem;
+      transition: background-color 0.3s ease;
+      
+    }
+    .stats-button {
+  width: 200px;
+}
+.poss-button {
+  width: 200px;
+}
+.export-button {
+  width: 300px;
+}
+    .button:hover {
+      background-color: #276d29;
+    }
+
+    .content-page {
+      padding: 2rem;
+    }
+
+    .content-page h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .content-page .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .content-page .button-container .button {
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-page">
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="logo-container">
+          <img src="backgrounds/netball_logo.jpg" alt="Netball New Zealand Logo" class="logo">
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="content">
+          <h1 style=" color: white;">Welcome to NNZ Gameday</h1>
+          <a href="game.9.html" class="button stats-button">Stats</a>
+          <a href="Poss_Total.html" class="button poss-button">Stats & Possessions</a>
+          <button onclick="exportAllImages()" class="button export-button">Export All Images</button>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="FileSaver.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+<script src="script.js"></script>
+ 
+</body>
+</html>

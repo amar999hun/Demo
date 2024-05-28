@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Cache-Control: no-store">
+<title>Silver Ferns Gameday</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Open Sans", Times, serif;
+	font-size: xx-large;
+}
+.style2 {font-size: small}
+.style3 {
+	font-size: large;
+	color: #FF0000;
+}
+.style6 {
+	font-size: large;
+	color: #00CC66;
+}
+body {
+  background-image: url('https://bedbet.net/w3images/Website_background5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+.blink {
+  animation: blink 5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+    color: blue;
+  }
+}
+-->
+</style>
+</head>
+
+<body>
+<div>
+  <button class="button button5" onclick="window.location.href='pass_Total.html';">ALL</button>
+  <button class="button button5" onclick="window.location.href='pass.1.html';">Q1</button>
+  <button class="button button5" onclick="window.location.href='pass.2.html';">Q2</button>
+  <button class="button button4 blink" onclick="window.location.href='pass.3.html';">Q3</button>
+  <button class="button button5" onclick="window.location.href='pass.4.html';">Q4</button>
+  <button class="button button5" onclick="window.location.href='pass.5.html';">XT</button>
+  <button class="button button5" onclick="window.location.href='index.3.html';">Stats</button>
+  <button class="button button4 blink" onclick="window.location.href='pass_Total.html';">Possessions</button>
+  <button class="button button5" onclick="window.location.href='coach.html';">Centrality</button>
+</div>
+
+<script>
+  
+    window.setInterval(function()
+{
+    document.getElementById('yourimage').src = "Poss_Q3.jpg?random="+new Date().getTime();
+}, 2000);
+</script>
+
+<img src="Poss_Q3.jpg" id="yourimage" width="1075" height="764" alt="DATA IS COMING" style="border:10px solid black"/>
+</body>
+
+</html>
